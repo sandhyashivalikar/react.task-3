@@ -1,0 +1,66 @@
+/* ColorPicker.css */
+
+.color-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.color-picker {
+  border-radius: 20px;
+  
+  padding: 40px;
+  width: 90%;
+  height: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.color-picker__button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 300px; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.color-picker__button:hover {
+  background-color: #45a049;
+}
+
+.color-picker__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; /* Center the button horizontally */
+}
+
+.color-picker__item {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #000000bf;
+  margin: 0 5px;
+}
+
+.color-picker__selected {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
